@@ -317,4 +317,6 @@ body {
         margin: 10px 0; /* Space between links */
         margin-left: 0; /* Reset margin-left */
     }
+    .map-wrapper {
+        max-width: 100%; /* Allow full width on smaller screens */
 }
