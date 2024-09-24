@@ -31,6 +31,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px 0;
+    flex-wrap: wrap; /* Allow wrapping */
 }
 
 .logo {
@@ -282,3 +283,22 @@ body {
     font-weight: bold;
 }
 
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Stack the navbar items vertically */
+        align-items: flex-start; /* Align items to the left */
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column; /* Stack the links vertically */
+        width: 100%; /* Allow the links to take full width */
+        margin-top: 10px; /* Add space above the links */
+    }
+
+    .nav-links li {
+        margin: 10px 0; /* Space between links */
+        margin-left: 0; /* Reset margin-left */
+    }
+}
