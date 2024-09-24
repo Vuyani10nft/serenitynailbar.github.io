@@ -19,7 +19,7 @@ body {
 
 /* Header */
 .header {
-    background-color: #fff;
+    background-color: #ffff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     position: sticky;
     top: 0;
@@ -61,7 +61,7 @@ body {
 }
 
 .cta-button {
-    background-color: #3d405b; /* Darker color for contrast */
+    background-color: #3d405b;
     color: white;
     padding: 10px 20px;
     border-radius: 30px;
@@ -70,7 +70,7 @@ body {
 }
 
 .cta-button:hover {
-    background-color: #e07a5f; /* Light color on hover */
+    background-color: #e07a5f;
 }
 
 /* Hero */
@@ -100,7 +100,7 @@ body {
 /* Services */
 .services {
     padding: 80px 0;
-    background-color: #fce4ec; /* Light dusty pink */
+    background-color: #fce4ec;
 }
 
 .section-title {
@@ -120,7 +120,7 @@ body {
     border-radius: 10px;
     padding: 20px;
     position: relative;
-    background-color: #fff; /* White background for contrast */
+    background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
 }
@@ -170,33 +170,76 @@ body {
     border-radius: 10px;
 }
 
+/* Instagram Link */
+.instagram-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.instagram-link img {
+    width: 50px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.instagram-link img:hover {
+    transform: scale(1.2);
+    background-color: #fce4ec;
+}
+
+.instagram-link p {
+    font-size: 1.1rem;
+    margin-top: 10px;
+    color: #333;
+}
+
 /* Contact */
 .contact {
     padding: 80px 0;
-    background-color: #fce4ec; /* Light dusty pink */
+    background-color: #fce4ec;
     text-align: center;
 }
 
 .contact p {
     font-size: 1.2rem;
+    margin-bottom: 20px;
 }
 
 /* Social Media */
-.social-media {
+.social-media-large {
+    display: flex;
+    justify-content: center;
     margin-top: 20px;
 }
 
-.social-media a {
-    margin: 0 10px;
+.social-media-large a {
+    color: #333;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 4em;
+    transition: color 0.3s ease;
 }
 
-.social-media img {
-    width: 40px;
-    transition: transform 0.3s;
+.social-media-large a:hover {
+    color: #f68c8b;
 }
 
-.social-media img:hover {
-    transform: scale(1.1);
+/* Google Maps */
+.map-container {
+    margin-top: 40px;
+}
+
+.location-image {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Instagram Hover Effect */
+.social-media a[href*="instagram"] img:hover {
+    filter: invert(32%) sepia(60%) saturate(3354%) hue-rotate(310deg) brightness(93%) contrast(95%);
 }
 
 /* Footer */
@@ -239,21 +282,3 @@ body {
     font-weight: bold;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .hero h2 {
-        font-size: 3rem;
-    }
-
-    .hero p {
-        font-size: 1.2rem;
-    }
-
-    .section-title {
-        font-size: 2rem;
-    }
-
-    .service-box h3 {
-        font-size: 1.5rem;
-    }
-}
