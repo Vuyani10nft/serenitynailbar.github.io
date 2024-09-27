@@ -228,10 +228,21 @@ body {
 
 .social-media-large a {
     color: #333;
-    margin: 0 15px;
     text-decoration: none;
     font-size: 4em;
     transition: color 0.3s ease;
+}
+
+.social-media-large a:nth-child(1) {
+    margin-right: -70px; /* Adjust this value as needed */
+}
+
+.social-media-large a:nth-child(2) {
+    margin: 0px; /* Adjust space on both sides */
+}
+
+.social-media-large a:nth-child(3) {
+    margin-left: -70px; /* Adjust this value as needed */
 }
 
 .social-media-large a:hover {
