@@ -149,7 +149,6 @@ body {
 /* Icons */
 .service-icon {
     width: 50px;
-    position: absolute;
     top: -25px;
     left: 20px;
 }
