@@ -24,6 +24,7 @@ body {
     position: sticky;
     top: 0;
     z-index: 1000;
+   transition: transform 0.3s ease-in-out; /* Smooth animation for hide/reveal */
 }
 
 .navbar {
@@ -332,4 +333,30 @@ body {
     .service-box ul {
         text-align: center;
     }
+}/* Mobile-specific Header Adjustments */
+@media (max-width: 768px) {
+  .header {
+    padding: 5px 15px; /* Reduce padding around the whole header */
+  }
+  
+  .logo {
+    margin-top: 5px; /* Minimize space above the logo */
+    margin-bottom: 0; /* Remove excess space below */
+    width: 80px; /* Adjust logo size if needed */
+  }
+  
+  .nav-menu {
+    margin-top: 10px; /* Space between logo and menu links */
+  }
+
+  .cta-button {
+    margin-top: 10px; /* Less space above the button */
+    margin-bottom: 5px; /* Tighten space below button */
+    padding: 8px 16px; /* Adjust button padding for a tighter look */
+  }
+
+  /* Optional: Make text sizes slightly smaller for mobile */
+  .nav-menu a {
+    font-size: 14px; /* Smaller font for links */
+  }
 }
