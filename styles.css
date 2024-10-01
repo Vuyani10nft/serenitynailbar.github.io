@@ -219,34 +219,39 @@ body {
     text-decoration: underline;
 }
 
-/* Social Media */
 .social-media-large {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
+  display: flex;
+  justify-content: center;  /* Center the icons */
+  align-items: center;
+  gap: 30px;  /* Adjust spacing between icons */
+  margin: 20px 0;
 }
 
 .social-media-large a {
-    color: #333;
-    text-decoration: none;
-    font-size: 4em;
-    transition: color 0.3s ease;
-}
-
-.social-media-large a:nth-child(1) {
-    margin-right: -70px; /* Adjust this value as needed */
-}
-
-.social-media-large a:nth-child(2) {
-    margin: 0px; /* Adjust space on both sides */
-}
-
-.social-media-large a:nth-child(3) {
-    margin-left: -70px; /* Adjust this value as needed */
+  text-decoration: none;
+  color: inherit;  /* Keep icon colors the same */
+  transition: transform 0.3s ease-in-out;
 }
 
 .social-media-large a:hover {
-    color: #f68c8b;
+  transform: scale(1.1);  /* Slight scaling effect on hover */
+}
+
+.social-media-large i {
+  font-size: 40px; /* Standard icon size */
+}
+
+.social-media-large .instagram-link i {
+  font-size: 60px; /* Custom size for Instagram icon */
+}
+
+.social-media-large p {
+  font-size: 16px; /* Ensure paragraph text is visible */
+  margin-top: 5px;
+}
+
+.social-media-large i:hover {
+  color: #E1306C;  /* Instagram color highlight on hover */
 }
 
 /* Map Container */
