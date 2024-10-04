@@ -1,20 +1,11 @@
 # robots.txt for Serenity Nail Bar & Spa
 
 User-agent: *  # Applies to all search engine crawlers
-Disallow: /private/  # Disallow crawling of the private directory (if you have one)
-Disallow: /temp/     # Disallow crawling of the temporary directory (if you have one)
+Disallow: /private/  # Disallow crawling of the private directory (if applicable)
+Disallow: /temp/     # Disallow crawling of the temporary directory (if applicable)
 
 # Allow crawling of all other pages
 Allow: /
 
 # Sitemap URL
-Sitemap: https://serenitynailbarandspa.com
-/sitemap.xml
-"""
-
-# Save the content to a robots.txt file
-robots_txt_path = '/mnt/data/robots.txt'
-with open(robots_txt_path, 'w') as file:
-    file.write(robots_txt_content)
-
-robots_txt_path
+Sitemap: https://serenitynailbarandspa.com/sitemap.xml
