@@ -152,15 +152,50 @@
             </a>
         </div>
 
-        <!-- Google Maps Location -->
-        <div class="map-container">
-            <h3 class="map-title">Find Us Here:</h3><p>33 Balfour Rd, Vincent, East London, 5217</p>
-            <div class="map-wrapper">
-                <a href="https://maps.app.goo.gl/xA3Dc5SbCCgZFTvr8" target="_blank">
-                    <iframe src="https://www.google.com/maps/embed?pb=!4v1727198004720!6m8!1m7!1sFm-JVxa59trVobxLnq9fdQ!2m2!1d-32.98078365278235!2d27.90149608958694!3f97.68903!4f0!5f0.7820865974627469" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </a>
-            </div>
-        </div>
+       <!-- Google Maps Location -->
+<div class="map-container">
+    <h3 class="map-title">Find Us Here:</h3>
+    <p>33 Balfour Rd, Vincent, East London, 5217</p>
+
+    <!-- Add Local Business Schema Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "NailSalon",
+        "name": "Serenity Nail Bar & Spa",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "33 Balfour Rd",
+            "addressLocality": "Vincent",
+            "addressRegion": "Eastern Cape",
+            "postalCode": "5217",
+            "addressCountry": "ZA"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "-32.98078365278235",
+            "longitude": "27.90149608958694"
+        },
+        "url": "https://serenitynailbarandspa.com",
+        "telephone": "+27838915675"
+    }
+    </script>
+
+    <div class="map-wrapper">
+        <!-- Use a descriptive title for the iframe -->
+        <iframe 
+            title="Serenity Nail Bar & Spa Location on Google Maps"
+            src="https://www.google.com/maps/embed?pb=!4v1727198004720!6m8!1m7!1sFm-JVxa59trVobxLnq9fdQ!2m2!1d-32.98078365278235!2d27.90149608958694!3f97.68903!4f0!5f0.7820865974627469"
+            width="600"
+            height="450"
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+</div>
+
 
     </div>
 </section>
