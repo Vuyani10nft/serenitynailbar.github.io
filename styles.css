@@ -329,6 +329,13 @@ body {
 
 /* Responsiveness */
 @media (max-width: 768px) {
+    .logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    color: #D19AAB; /* Updated color */
+    text-decoration: none;
+    top: 0;
+}
     .navbar {
         flex-direction: column;
     }
@@ -337,7 +344,10 @@ body {
         flex-direction: column;
         text-align: center;
     }
-
+    .nav-links li {
+    margin-left: 30px;
+    margin-top: 10px;
+    }
     .cta-button {
         margin-top: 15px;
     }
