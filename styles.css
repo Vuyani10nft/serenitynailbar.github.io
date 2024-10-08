@@ -41,7 +41,12 @@ body {
     color: #D19AAB; /* Updated color */
     text-decoration: none;
 }
-
+/* Apply a gradient for a richer effect */
+.logo-container {
+    background: linear-gradient(45deg, black, #9575CD); /* Darker gradient for better contrast */
+    padding: 10px;
+    border-radius: 5px;
+}
 .nav-links {
     display: flex;
     list-style: none;
